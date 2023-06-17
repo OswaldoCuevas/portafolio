@@ -603,9 +603,10 @@ p {
                         display: flex;
                         flex-direction: column;
                         width: 40px;
+                        justify-content: flex-start;
                         p{
                           display:none;
-                          padding: 5px;  
+                          padding: 3px 5px;  
                         }
                         #line-number-1{
                             display: block;

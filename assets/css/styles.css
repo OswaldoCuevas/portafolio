@@ -567,11 +567,12 @@ p {
   display: flex;
   flex-direction: column;
   width: 40px;
+  justify-content: flex-start;
 }
 
 .content #section1 .content-section .animation_code .content-code .line-code p {
   display: none;
-  padding: 5px;
+  padding: 3px 5px;
 }
 
 .content #section1 .content-section .animation_code .content-code .line-code #line-number-1 {
