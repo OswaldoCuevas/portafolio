@@ -5,10 +5,10 @@ $(document).ready(function (){
     let PrintPianoSection = false;
     let DarkActive = false;
     let PrintLanguages = false;
-    if((localStorage.getItem('dark') != "null") && (localStorage.getItem('dark') != null)){
-        showDark()
-    }else{
+    if((localStorage.getItem('light') != "null") && (localStorage.getItem('dark') != null)){
         theme()
+    }else{
+        showDark()
     }
     $(".content-proyects").load("assets/components/proyects.html");
     $(".languages").load("assets/components/languages.html");
@@ -26,7 +26,7 @@ $(document).ready(function (){
     }
      async function showDark(){
         var lottiePlayer = document.getElementById('lottie');
-        localStorage.setItem('dark', true);
+        localStorage.setItem('light', null);
             theme()
             lottiePlayer.play();
             await delay(700);
@@ -37,7 +37,7 @@ $(document).ready(function (){
     }
     async function showLight(){
         var lottiePlayer = document.getElementById('lottie');
-        localStorage.setItem('dark', null);
+        localStorage.setItem('light', true);
         theme()
         lottiePlayer.play();
         await delay(700);
@@ -47,7 +47,7 @@ $(document).ready(function (){
         
     }
     function theme(){
-        const _theme = (localStorage.getItem('dark') != "null") && (localStorage.getItem('dark') != null)  ? "dark" : "light";
+        const _theme = (localStorage.getItem('light') != "null") && (localStorage.getItem('light') != null)  ? "light" : "dark";
             $("section").removeClass("dark light").addClass(_theme);
             $(".section-color").removeClass("dark light").addClass(_theme);
             $(".info-me").removeClass("content-dark content-light").addClass("content-"+_theme);
