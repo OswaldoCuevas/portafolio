@@ -582,7 +582,7 @@ p {
 
 @media screen and (max-width: 450px) {
   .content #section1 .content-section .animation_code .content-code .line-code {
-    font-size: 14px;
+    font-size: 13px;
     padding-right: 0;
   }
 }
@@ -629,7 +629,7 @@ p {
 @media screen and (max-width: 450px) {
   .content #section1 .content-section .animation_code .content-code .code {
     font-family: "Cailbri", monospace;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .content #section1 .section-button {
