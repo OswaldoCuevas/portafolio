@@ -606,7 +606,8 @@ p {
                         justify-content: flex-start;
                         p{
                           display:none;
-                          padding: 3px 5px;  
+                          padding: 5px;
+                          font-size: 17px;  
                         }
                         #line-number-1{
                             display: block;
@@ -629,8 +630,10 @@ p {
                         flex-direction: column;
                         align-items: flex-start;
                         justify-content: flex-start;
-                        font-size: 15px;
+                      
                         .line{
+                         
+                            font-size: 16px;
                            
                             width: 0;
                             overflow: hidden;
@@ -659,8 +662,11 @@ p {
                         @media screen and (max-width: 450px)
                         {
                             &{
-                                font-family: 'Cailbri', monospace;;
-                                font-size: 14px;
+                                
+                                    font-family: 'Cailbri', monospace;;
+                                    font-size: 14px;  
+                               
+                               
                                
                             }
                     
