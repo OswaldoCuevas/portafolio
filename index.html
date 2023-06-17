@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oswaldo Cuevas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0b92b93f06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src=" https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><span class="main-options active" id="redirect-section-1" ><a class="button-redirection"  href="#section1">Inicio</a></span></li>
+            <li class="navbar-item"><span class="main-options" id="redirect-section-2"><a class="button-redirection" href="#section2">Acerca de mí</a></span></li>
+            <li class="navbar-item"><span class="main-options" id="redirect-section-4"><a class="button-redirection" href="#section4">Mis proyectos</a></span></li>
+        </ul>
+    </nav>
+ <div class="content">
+    <section id="section1">
+        <header>
+            <div class="decore">
+                <div id="decore2"></div>
+                <div id="decore1"></div>
+                <button id="theme"><lottie-player id="lottie" src="assets/animation/sun-moon.json"   background="transparent"  speed="2"></lottie-player></button>
+            </div>
+          
+        </header>
+        <div class="content-section">
+                <div class="me">
+                    <span class="title">Hola, soy Oswaldo Cuevas un desarrollador de aplicaciónes.</span>
+                    <span class="subtitle">Me gusta desarrollar aplicaciones web y nativas.</span>
+                    <div class="section-button">
+                        <a class="button-redirection smooth-scroll" id="button-section1" download="Oswaldo Cuevas" href="assets/documents/CV.pdf"><span class="text"><i class="fa-solid fa-file-arrow-down"></i> Descargar CV</span></a>
+                    </div>
+                </div>
+                 <div class="animation_code"></div>
+                 
+        </div>
+        <div class="section-button">
+            <a class="button-redirection" id="button-section1-min" download="Oswaldo Cuevas" href="assets/documents/CV.pdf"><span class="text"><i class="fa-solid fa-file-arrow-down"></i> Descargar CV</span></a>
+        </div>
+        
+       
+    </section>
+    <section  id="section2">
+     <div class="content-section section-color">
+        <div class="info-me" id="info-me">
+            <div class="header">
+                <div class="img">
+                    <img src="assets/img/me.jpg" alt="" >
+                </div>
+                <span>Oswaldo Cuevas</span>
+            </div>
+            <div>
+                <span>Nacionalidad</span>
+                <img src="assets/img/mx.svg" height="15px" alt="">
+            </div>
+            <div>
+                <span>Edad</span>
+                <span>22 años</span>
+            </div>
+            <div>
+                <span>Estudios</span>
+                <span>Ing. en sistemas computacionales</span>
+            </div>
+            <div>
+                <span>Experiencia</span>
+                <span>Desarrollo de aplicaciones</span>
+            </div>
+            <div>
+                <span>Ingles</span>
+                <span>B1</span>
+            </div>
+                
+            <div class="section">
+                <span>Pasa Tiempos</span>
+            </div>
+            <span>
+                Me encanta tocar el piano
+            </span>
+        </div>
+        <div class="content-piano" id="content-piano"></div>
+    </div>
+    <div class="line-decorate">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+
+    </section>
+    <section id="section3">
+        <header><span id="title-section-3">Teconolgías que manejo</span></header>
+        <div class="languages" id="languages"></div>
+    </section>
+    <section  id="section4">
+        <header>
+            <span id="title-section-4">Mis proyectos</span>
+        </header>
+        <div class="content-proyects"></div>
+    </section>
+    <section id="section5">
+        <div>
+            <span>Datos de contacto</span>
+        </div>
+        <div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=oscuevas2000%40gmail.com" target="_blank">
+               <div class="img-contact">
+                    <img src="assets/img/gmail.svg" width="60px" alt="">
+               </div>
+            </a>
+            <a href="https://linkedin.com/in/oswaldo-cuevas-1b0690223" target="_blank">
+                <div class="img-contact">
+                    <img src="assets/img/linkedin.svg" width="40px" alt="">
+                </div>
+             
+            </a>
+        </div>
+        
+    </section>
+ </div>
+ <div class="alert">
+    <div class="content-alert">
+        <span class="title">¡Bienvenido!</span>
+        <p>Soy oswaldo ¿Cómo te llamas?</h3>
+        <div class="group">
+           
+            <input type="text" id="guest" maxlength="15">
+            <button id="saved_guest" ><i class="fa-solid fa-hand"></i></button>
+        </div>
+        <p>Saludar</p>
+
+    </div>
+ </div>
+ <div class="alert-video">
+    <div class="title">
+        <button id="exit-alert"><i class="fa-solid fa-xmark"></i></button>
+        <span id="title-video"></span></div>
+    <div id="video-container">
+       
+    </div>
+ </div>
+</body>
+</html>
