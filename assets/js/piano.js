@@ -37,6 +37,7 @@ $(document).ready(function() {
    ["DSharp6","f","keySharp"],
 
     ];
+    let activeAnimation = false;
     let keyboardActive = false;
     const route = "assets/sounds/";
     const C4 = new Audio(route+'C4.mp3');
@@ -75,7 +76,30 @@ $(document).ready(function() {
     const CSharp6 = new Audio(route+'CSharp6.mp3');
     const DSharp6 = new Audio(route+'DSharp6.mp3');
 
+    $(window).scroll(function() {
+      
+      ShowSond()
+     });
+     ShowSond()
+     function ShowSond(){
+      if(!activeAnimation && detectVisibility("content-piano")){
+        activeAnimation = true;
+        Sound();
+      }
+    }
+     function detectVisibility(elementId) {
+      var element = $('#' + elementId);
+      var elementRect = element.get(0).getBoundingClientRect();
+      var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      var elementHeight = elementRect.height;
+      var visibleThreshold = windowHeight * 0.2; // 20% of the window height
+    
+      return isVisible = (
+        elementRect.top <= windowHeight - visibleThreshold &&
+        elementRect.bottom >= visibleThreshold
+      );
   
+    }
     $(".keyboard").on('click', function(){
       if(keyboardActive){
         keyboardActive = false;
@@ -215,7 +239,7 @@ $(document).ready(function() {
       function delay(time){
         return new Promise(res => setTimeout(res, time));
       } 
-      Sound();
+     
      async  function Sound(){
       var screenWidth = window.innerWidth;
        X1 = screenWidth > 800 ? 200:150;

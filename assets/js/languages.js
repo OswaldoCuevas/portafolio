@@ -1,16 +1,37 @@
 $(document).ready(function() {
-   
+  activeAnimation = false;
+  ShowItems()
  async function ShowItems(){
-    const elements = $(".content-technologies");
-    
-    $("#title-section-3").css("transform", "scale(1)");
-    await delay(200);
-    for (let element of elements) {
-      $(element).css("transform", "scale(1)");
-      ImgAPPear($(element).attr("id"));
-      await delay(200);
+    if(!activeAnimation && detectVisibility("section3")){
+      activeAnimation = true; 
+      ShowAnimation()
     }
+  }
+ async function ShowAnimation(){
+    {
+      const elements = $(".content-technologies");
+      $("#title-section-3").css("transform", "scale(1)");
+        await delay(200);
+      for (let element of elements) {
+        $(element).css("transform", "scale(1)");
+        ImgAPPear($(element).attr("id"));
+        await delay(200);
+      }
       
+    }
+  }
+  function detectVisibility(elementId) {
+    var element = $('#' + elementId);
+    var elementRect = element.get(0).getBoundingClientRect();
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var elementHeight = elementRect.height;
+    var visibleThreshold = windowHeight * 0.2; // 20% of the window height
+  
+    return isVisible = (
+      elementRect.top <= windowHeight - visibleThreshold &&
+      elementRect.bottom >= visibleThreshold
+    );
+
   }
   async function ImgAPPear(id){
     const images = document.querySelectorAll('#'+id+' .technologies img');
