@@ -205,5 +205,10 @@ $(document).ready(function (){
     
       }
       
-      
+      $("#guest").on("keyup",function(e){
+        if (e.key === "Enter") {
+            // Simular un clic en el botón
+            $("#saved_guest").click();
+          }
+      })
 });
