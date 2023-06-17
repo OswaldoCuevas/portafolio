@@ -2,7 +2,7 @@ $(document).ready(function() {
   activeAnimation = false;
   ShowItems()
  async function ShowItems(){
-    if(!activeAnimation && detectVisibility("section3")){
+    if(!activeAnimation && detectVisibility("section3")&& localStorage.getItem('name')!=null){
       activeAnimation = true; 
       ShowAnimation()
     }

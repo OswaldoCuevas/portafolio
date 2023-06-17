@@ -82,7 +82,8 @@ $(document).ready(function() {
      });
      ShowSond()
      function ShowSond(){
-      if(!activeAnimation && detectVisibility("content-piano")){
+      
+      if(!activeAnimation && detectVisibility("content-piano") && localStorage.getItem('name')!=null){
         activeAnimation = true;
         Sound();
       }

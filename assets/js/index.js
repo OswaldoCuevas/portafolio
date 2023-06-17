@@ -5,7 +5,7 @@ $(document).ready(function (){
     let PrintPianoSection = false;
     let DarkActive = false;
     let PrintLanguages = false;
-    if((localStorage.getItem('light') != "null") && (localStorage.getItem('dark') != null)){
+    if((localStorage.getItem('light') != "null") && (localStorage.getItem('light') != null)){
         theme()
     }else{
         showDark()

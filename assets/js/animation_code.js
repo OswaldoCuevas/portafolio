@@ -7,7 +7,7 @@ $(document).ready(function() {
        });
        ShowAnimation()
        function ShowAnimation(){
-        if(!activeAnimation && detectVisibility("section1")){
+        if(!activeAnimation && detectVisibility("section1") && localStorage.getItem('name')!=null){
           activeAnimation = true; 
           PrintFirst()
         }
