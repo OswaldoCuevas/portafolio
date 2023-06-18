@@ -137,8 +137,7 @@ $(document).ready(function (){
       async  function ShowPiano(){
         await  delay(100)
             if(!PrintPianoSection){
-                PrintPianoSection = true;
-               
+                PrintPianoSection = true;              
                 $(".content-piano").css("opacity","1");
                 $(".content-piano").css("transform","translateY(0)")
                 $("#decore3").css("transform","scale(1.4) translateY(20px)")
