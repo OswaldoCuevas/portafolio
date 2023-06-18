@@ -12,8 +12,8 @@ $(document).ready(function (){
     }
     $(".content-proyects").load("assets/components/proyects.html");
     $(".languages").load("assets/components/languages.html");
-    $(".animation_code").load("assets/components/animation_code.html");
    
+    $(".content-piano").load("assets/components/piano.html");
     ValidityName();
     $("#theme").on("click", function(e) {
         changeTheme()
@@ -138,7 +138,7 @@ $(document).ready(function (){
         await  delay(100)
             if(!PrintPianoSection){
                 PrintPianoSection = true;
-                $(".content-piano").load("assets/components/piano.html");
+               
                 $(".content-piano").css("opacity","1");
                 $(".content-piano").css("transform","translateY(0)")
                 $("#decore3").css("transform","scale(1.4) translateY(20px)")
@@ -162,11 +162,11 @@ $(document).ready(function (){
         $("#button-section1-min").css("opacity","1");
         $("#theme").css("opacity","1");
         if(!PrintWelcomeSection){
-            
-            
+            $(".animation_code").load("assets/components/animation_code.html");
+            PrintWelcomeSection = true
         }
         $(".animation_code").css("opacity","1");
-        PrintWelcomeSection = true
+      
        }
        function ActiveInput(){
         $("#guest").css("color","#02bfe9;");
