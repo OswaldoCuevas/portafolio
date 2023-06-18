@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
 }
 
 body, html {
@@ -243,6 +242,7 @@ p {
 .content section {
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .content #section1 {
@@ -772,6 +772,7 @@ p {
 
 @media screen and (max-width: 800px) {
   .content #section2 .content-section .info-me {
+    transform: translateY(0) translateX(0);
     margin-right: 0;
   }
 }
@@ -849,6 +850,7 @@ p {
 @media screen and (max-width: 800px) {
   .content #section2 .content-section .content-piano {
     margin-top: 20px;
+    transform: translateY(0) translateX(0);
   }
 }
 .content #section2 .content-section .content-piano img {
