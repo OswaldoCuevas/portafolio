@@ -1,30 +1,8 @@
 $(document).ready(function() {
 
     let guest = localStorage.getItem('name') ;
-    let activeAnimation = false;
-    $(window).scroll(function() {
-        ShowAnimation()
-       });
-       ShowAnimation()
-       function ShowAnimation(){
-        if(!activeAnimation && detectVisibility("section1") && localStorage.getItem('name')!=null){
-          activeAnimation = true; 
-          PrintFirst()
-        }
-      }
-      function detectVisibility(elementId) {
-        var element = $('#' + elementId);
-        var elementRect = element.get(0).getBoundingClientRect();
-        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        var elementHeight = elementRect.height;
-        var visibleThreshold = windowHeight * 0.2; // 20% of the window height
-      
-        return isVisible = (
-          elementRect.top <= windowHeight - visibleThreshold &&
-          elementRect.bottom >= visibleThreshold
-        );
-    
-      }
+    let stopAnimation = false;
+    PrintFirst()
     async function PrintFirst(){
         $(".code-options").attr("disabled", true);
       await  delay(1500);
