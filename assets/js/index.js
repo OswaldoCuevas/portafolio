@@ -212,4 +212,27 @@ $(document).ready(function (){
             $("#saved_guest").click();
           }
       })
+      $("#button-section1").on("click", function(){
+        DownloadCV()
+      });
+      $("#button-section1-min").on("click", function(){
+        DownloadCV()
+      });
+      function DownloadCV(){
+        var enlace1 = document.createElement('a');
+        enlace1.href = 'assets/documents/Spanish.pdf';
+        enlace1.download = 'Oswaldo Cuevas Español';
+        enlace1.target = '_blank';
+        enlace1.style.display = 'none';
+        document.body.appendChild(enlace1);
+        enlace1.click();
+      
+        var enlace2 = document.createElement('a');
+        enlace2.href = 'assets/documents/English.pdf';
+        enlace2.download = 'Oswaldo Cuevas English';
+        enlace2.target = '_blank';
+        enlace2.style.display = 'none';
+        document.body.appendChild(enlace2);
+        enlace2.click();
+      }
 });

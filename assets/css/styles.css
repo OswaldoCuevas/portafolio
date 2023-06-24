@@ -433,7 +433,7 @@ p {
     display: none;
   }
 }
-.content #section1 .content-section .me .section-button a {
+.content #section1 .content-section .me .section-button button {
   position: relative;
   opacity: 0;
   margin-top: 20px;
@@ -460,17 +460,17 @@ p {
   transition: opacity 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.content #section1 .content-section .me .section-button a span {
+.content #section1 .content-section .me .section-button button span {
   color: #04a1c4;
   transition: opacity 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.content #section1 .content-section .me .section-button a:active, .content #section1 .content-section .me .section-button a:hover {
+.content #section1 .content-section .me .section-button button:active, .content #section1 .content-section .me .section-button button:hover {
   outline: 0;
   background-color: #04a1c4;
 }
 
-.content #section1 .content-section .me .section-button a:active span, .content #section1 .content-section .me .section-button a:hover span {
+.content #section1 .content-section .me .section-button button:active span, .content #section1 .content-section .me .section-button button:hover span {
   color: #eeeded;
 }
 
@@ -655,7 +655,7 @@ p {
     justify-content: center;
   }
 }
-.content #section1 .section-button a {
+.content #section1 .section-button button {
   position: relative;
   opacity: 0;
   margin-top: 20px;
@@ -682,17 +682,17 @@ p {
   transition: opacity 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.content #section1 .section-button a span {
+.content #section1 .section-button button span {
   color: #04a1c4;
   transition: opacity 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.content #section1 .section-button a:active, .content #section1 .section-button a:hover {
+.content #section1 .section-button button:active, .content #section1 .section-button button:hover {
   outline: 0;
   background-color: #04a1c4;
 }
 
-.content #section1 .section-button a:active span, .content #section1 .section-button a:hover span {
+.content #section1 .section-button button:active span, .content #section1 .section-button button:hover span {
   color: #eeeded;
 }
 
